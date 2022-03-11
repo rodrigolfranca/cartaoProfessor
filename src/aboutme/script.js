@@ -3,7 +3,7 @@ fetch('https://simple-market-backend.herokuapp.com/aboutme')
   .then(data => {
       $('#cardText').append(`"${data.aboutMe}" -Leonardo Pimentel`);
       $("#a-linkedin").attr("href", `${data.linkedin}`);
-      $("#a-linkedin").attr("href", `mailto:${data.email}`);
+      $("#a-email").attr("href", `mailto:${data.email}`);
       let phone = data.mobileNumber.split('+')[1];      
-      $("#a-linkedin").attr("href", `https://wa.me/${phone}`);
+      $("#a-phone").attr("href", `https://wa.me/${phone}`);
   });
