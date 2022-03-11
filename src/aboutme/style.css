@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #0f0f0f;
+}
+#flex {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+#container {
+    height: 629px;
+    width: 450px;
+    background-image: url("./images/card.png");
+    background-size: cover;
+    background-position: center;
+    padding-top: 21px;
+    padding-left: 45px;
+    padding-right: 45px ;
+}
+    #cardType {
+        margin-top: 300px;
+        font-weight: bold;
+    }
+    #cardText {
+        margin-top: 20px;
+        width: 355px;
+        text-justify: inter-word;
+        text-align: justify;
+        font-style: italic;
+    }
+    #icn-container {
+        height: 24px;
+        width:272px;
+        margin: 60px auto 29px;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 100px;
+    }
+        .icon:hover {
+            fill:rgb(13, 13, 136)
+        }
+    #cardPower {
+        width: 353px;
+        text-align: right;
+        font-weight: bold;
+        font-size: 20px;
+    }
