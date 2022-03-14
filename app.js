@@ -1,6 +1,11 @@
 const express = require('express');
+const cors = require("cors");
 const app = express();
 const port = 3000;
+
+const configCors = {
+    origin: false
+}
 
 const professor = {
     "greeting":"Hi! I guess it's better talk about me in a json, sup? :p",
@@ -11,7 +16,9 @@ const professor = {
     "reminder":"If you seeing this on your web browser, ya you doing right"
 }
 
-app.get("/aboutme", (req, res) => {
+app.use(cors())
+
+app.get("/aboutme", cors(configCors) , (req, res) => {
     res.json(professor)
 });
 
