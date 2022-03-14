@@ -1,4 +1,4 @@
-fetch('https://simple-market-backend.herokuapp.com/aboutme')
+fetch('https://localhost:3000/aboutme')
   .then(response => response.json())
   .then(data => {
       $('#cardText').append(`"${data.aboutMe}" -Leonardo Pimentel`);
